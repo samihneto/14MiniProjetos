@@ -10,3 +10,10 @@ Comentários
     (autor, mensagem)
 estaAoVivo
 */
+
+class Postagem {
+    titulo;
+    mensagem;
+    autor;
+    visualizações;
+}
