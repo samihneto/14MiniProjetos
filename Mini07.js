@@ -5,3 +5,19 @@ Múltiplos de 3
 Múltiplos de 5
 5, 10
 */
+
+soma (10);
+
+function soma (limite) {
+    let multiplosDe3 = 0;
+    let multiplosDe5 = 0;
+    for (let i = 0; i < limite; i++) {
+        if (i%3===0) {
+            multiplosDe3 += i;
+        } else if (i%5===0) {
+            multiplosDe5 += i;
+        }
+        
+    }
+    console.log(multiplosDe3 + multiplosDe5);
+}

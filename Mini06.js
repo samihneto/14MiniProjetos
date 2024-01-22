@@ -2,19 +2,30 @@
 Criar um método para ler propriedades de um objeto e exibir somente as propriedades do tipo string que estão nesse objeto.
 */
 
-const filme = {
-    titulo : 'Vingadores',
-    ano : 2018,
-    diretor : 'Robin',
-    personagem : 'Thor'
+class Filme {
+    titulo;
+    ano;
+    diretor;
+    personagem;
+
+    constructor(titulo, ano, diretor, personagem) {
+        this.titulo = titulo;
+        this.ano = ano;
+        this.diretor = diretor;
+        this.personagem = personagem;
+    }
+
+
 }
 
-exibirPropriedades(filme);
+const Dracula = new Filme ('Dracula', 1944, 'Franz Bougar', 'Dracula');
 
 function exibirPropriedades(obj) {
     for (prop in obj) {
         if (typeof obj[prop] === 'string') {
-            console.log(prop, obj[prop]);
+            return prop, obj[prop];
         }
     }
 }
+
+console.log(Dracula.ano);
