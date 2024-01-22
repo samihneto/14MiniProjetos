@@ -1,0 +1,3 @@
+/*
+Igualdade entre Objetos
+*/
